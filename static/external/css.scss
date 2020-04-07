@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+
+$dark: #282c34;
+$green: #9fea63;
+$blue: #3ba9f4;
+
+* { box-sizing: border-box; }
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Audiowide;
+  background-color: $dark;
+}
+
+.three-d {
+  font-size: 50px;
+  margin: 5px;
+  padding: 20px;
+  color: #fff;
+  transform: skew(-10deg, -18deg) rotate(-9deg);
+  background-color: $green;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  text-shadow: 0 0 2px $dark;
+  
+  &:hover {
+    text-shadow: -5px -5px 1px $dark;
+    transform: skew(-10deg, -18deg) rotate(-9deg) scale(1.1);
+    box-shadow: -5px -5px 0 0 #fff;
+  }
+}
